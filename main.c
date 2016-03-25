@@ -52,7 +52,7 @@ int main(int argc, char **argv) {
   while((c = getopt(argc, argv, "s:d:")) != -1){
     switch(c){
     case 's' : size = atoi(optarg); break;
-    case 'd' : parse_digest(optarg, hash); break;
+    case 'd' : digest = optarg; break;
     }
   }
 
