@@ -1,3 +1,8 @@
+/*
+ * sha256-random-attack. Simple sha256 attack using /dev/urandom
+ * (c) 2016 Joachim Naulet <jnaulet@rdinnovation.fr>
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
