@@ -1,4 +1,4 @@
-TARGET=sha256_attack
+TARGET=sha256-random-attack
 OBJ = main.o
 
 CFLAGS = -Wall

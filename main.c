@@ -34,7 +34,7 @@ static unsigned char *parse_digest(const char *digest,
   return md;
 }
 
-static void usage(int argv0) {
+static void usage(const char *argv0) {
 
   fprintf(stderr, "Usage : %s -d <sha256-digest> [-s size]\n", argv0);
   exit(1);
@@ -58,7 +58,7 @@ int main(int argc, char **argv) {
 
   /* Check opts */
   if(!digest)
-    usage();
+    usage(argv[0]);
 
   /* Init */
   parse_digest(digest, hash);
